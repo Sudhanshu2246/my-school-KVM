@@ -6,20 +6,25 @@ import Footer from "@/components/footer/Footer";
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // multiple weights for headings
+  weight: ["400", "500", "600", "700"], 
   display: "swap",
 });
 
 const lato = Lato({
   variable: "--font-lato",
   subsets: ["latin"],
-  weight: ["400", "700"], // regular + bold for body
+  weight: ["400", "700"], 
   display: "swap",
 });
 
 export const metadata = {
   title: "Kamla Bal Vidya Mandir",
   description: "Let’s shape your child’s future together and create a brighter tomorrow.",
+  icons: {
+     icon: "/favicon.ico", // main
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
