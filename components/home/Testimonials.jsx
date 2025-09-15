@@ -70,12 +70,12 @@ const testimonials = [
 // animation configs
 const marqueeVariants = {
   animate: {
-    x: ["0%", "-100%"], // move left fully
+    x: ["0%", "-100%"],
     transition: {
       x: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 50, // adjust speed
+        duration: 50,
         ease: "linear",
       },
     },
@@ -84,17 +84,22 @@ const marqueeVariants = {
 
 function TestimonialCard({ t }) {
   return (
-    <div id="testimonials" className="min-w-[300px] max-w-[320px] p-5 bg-white shadow-md rounded-2xl mx-2 flex flex-col">
-      <p className="text-gray-700 text-sm flex-grow">{t.text}</p>
+    <div
+      id="testimonials"
+      className="min-w-[250px] sm:min-w-[280px] md:min-w-[300px] max-w-[320px] p-4 sm:p-5 bg-white shadow-md rounded-2xl mx-2 flex flex-col"
+    >
+      <p className="text-gray-700 text-sm sm:text-base flex-grow leading-relaxed">
+        {t.text}
+      </p>
       <div className="flex items-center gap-3 mt-4">
         <img
           src={t.image}
           alt={t.name}
-          className="w-10 h-10 rounded-full object-cover"
+          className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover"
         />
         <div>
-          <h4 className="text-sm font-semibold">{t.name}</h4>
-          <p className="text-xs text-gray-500">{t.role}</p>
+          <h4 className="text-sm sm:text-base font-semibold">{t.name}</h4>
+          <p className="text-xs sm:text-sm text-gray-500">{t.role}</p>
         </div>
       </div>
     </div>
@@ -103,16 +108,16 @@ function TestimonialCard({ t }) {
 
 export default function TestimonialsCarousel() {
   return (
-    <section className="py-16 bg-white relative">
+    <section className="py-12 sm:py-16 bg-white relative overflow-hidden">
       {/* Side label */}
-      <div className="absolute left-0 top-25 -translate-y-1/2 rotate-180">
-        <div className="bg-blue-600 text-white px-3 py-1 rounded-lg rounded-br-lg text-sm font-semibold tracking-wider rotate-90">
+      {/* <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block">
+        <div className="bg-blue-600 text-white px-3 py-1 rounded-lg rounded-br-lg text-xs sm:text-sm font-semibold tracking-wider rotate-90">
           TESTIMONY
         </div>
-      </div>
+      </div> */}
 
-      <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+      <div className="px-4 sm:px-6 lg:px-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-10">
           What Alumni Say <br className="hidden md:block" /> About Our School
         </h2>
 
@@ -129,7 +134,7 @@ export default function TestimonialsCarousel() {
           </motion.div>
         </div>
 
-        {/* Row 2 (opposite direction for nice effect) */}
+        {/* Row 2 */}
         <div className="flex overflow-hidden">
           <motion.div
             className="flex"

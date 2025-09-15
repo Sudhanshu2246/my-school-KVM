@@ -3,23 +3,23 @@ import React from "react";
 
 const HomeHero = () => {
   return (
-    <section className="relative bg-gray-50 text-gray-900 py-20">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="relative bg-gray-50 text-gray-900 py-16 sm:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}
-        <div className="space-y-6">
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
+        <div className="space-y-6 text-center lg:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             Together, let’s craft a{" "}
             <span className="text-blue-600">brilliant future</span> for your child.
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0">
             At our Hindi medium school, we are committed to providing quality
             education that shapes young minds and prepares them for a bright
             future.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start">
             <button className="bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition">
               Join with us
             </button>
@@ -29,24 +29,24 @@ const HomeHero = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-3 gap-6 pt-8">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8">
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-blue-600">
+              <h2 className="text-2xl sm:text-3xl font-bold text-blue-600">
                 10 <span className="text-gray-800">+</span>
               </h2>
-              <p className="text-gray-500">Teachers</p>
+              <p className="text-gray-500 text-sm sm:text-base">Teachers</p>
             </div>
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-blue-600">
+              <h2 className="text-2xl sm:text-3xl font-bold text-blue-600">
                 500 <span className="text-gray-800">+</span>
               </h2>
-              <p className="text-gray-500">Students</p>
+              <p className="text-gray-500 text-sm sm:text-base">Students</p>
             </div>
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-blue-600">
+              <h2 className="text-2xl sm:text-3xl font-bold text-blue-600">
                 A <span className="text-gray-800">+</span>
               </h2>
-              <p className="text-gray-500">Accreditation</p>
+              <p className="text-gray-500 text-sm sm:text-base">Accreditation</p>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ const HomeHero = () => {
             alt="School illustration"
             width={500}
             height={500}
-            className="rounded-2xl shadow-md"
+            className="rounded-2xl shadow-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto"
           />
         </div>
       </div>
