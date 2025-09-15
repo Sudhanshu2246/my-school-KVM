@@ -26,8 +26,8 @@ export default function ContactForm() {
 
     try {
       const result = await emailjs.send(
-        "service_clsf43q", // your service ID
-        "template_9bvuwvb", // your template ID
+        "service_clsf43q",
+        "template_9bvuwvb",
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -36,7 +36,7 @@ export default function ContactForm() {
           message: formData.message,
           date: new Date().toLocaleString(),
         },
-        "QRYxZAaxVKjCGMtXI" // your public key
+        "QRYxZAaxVKjCGMtXI"
       );
 
       console.log("EmailJS result:", result.text);
@@ -53,7 +53,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-slate-800/70 rounded-2xl shadow-lg p-8 space-y-6"
+      className="bg-white rounded-2xl shadow-lg p-8 space-y-6 border border-gray-200"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <input
@@ -63,7 +63,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-slate-900 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="email"
@@ -72,7 +72,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-slate-900 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
@@ -84,7 +84,7 @@ export default function ContactForm() {
           value={formData.phone}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-slate-900 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
         <select
@@ -92,7 +92,7 @@ export default function ContactForm() {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-slate-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <option value="">Select Reason</option>
           <option value="Admission Inquiry">Admission Inquiry</option>
@@ -110,17 +110,17 @@ export default function ContactForm() {
         onChange={handleChange}
         required
         rows="5"
-        className="w-full px-4 py-3 rounded-lg bg-slate-900 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400"
+        className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
       ></textarea>
 
       {status && (
         <p
           className={`text-sm mt-2 ${
             status.startsWith("✅")
-              ? "text-green-400"
+              ? "text-green-600"
               : status.startsWith("❌")
-              ? "text-red-400"
-              : "text-yellow-400"
+              ? "text-red-600"
+              : "text-yellow-600"
           }`}
         >
           {status}
@@ -130,10 +130,10 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className={`w-full py-3 rounded-lg font-semibold transition transform shadow-lg ${
+        className={`w-full py-3 rounded-lg font-semibold transition transform shadow-md ${
           loading
-            ? "bg-gray-600 cursor-not-allowed"
-            : "bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-105"
+            ? "bg-gray-400 cursor-not-allowed"
+            : "bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:scale-105"
         }`}
       >
         {loading ? "Sending..." : "Send Message"}

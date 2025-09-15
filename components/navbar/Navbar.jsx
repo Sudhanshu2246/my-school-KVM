@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { X, Menu, LogIn } from "@deemlol/next-icons"; 
+import { X, Menu, LogIn } from "@deemlol/next-icons";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed w-full top-0 z-50 backdrop-blur-md bg-white/90 shadow-md border-b border-gray-200">
+      <nav className="fixed w-full top-0 z-50 backdrop-blur-md bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900 text-white shadow-md ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -27,7 +27,7 @@ const Navbar = () => {
                   height={20}
                   priority
                 />
-                <span className="ml-2 text-xl font-bold text-gray-900">School</span>
+                {/* <span className="ml-2 text-xl font-bold text-gray-900">School</span> */}
               </Link>
             </div>
 
@@ -35,28 +35,28 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/"
-                className="text-gray-800 hover:text-blue-600 transition-colors duration-300 font-medium relative group"
+                className=" hover:text-blue-600 transition-colors duration-300 font-medium relative group"
               >
                 Home
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 href="/about-us"
-                className="text-gray-800 hover:text-blue-600 transition-colors duration-300 font-medium relative group"
+                className=" hover:text-blue-600 transition-colors duration-300 font-medium relative group"
               >
                 About Us
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 href="/culture"
-                className="text-gray-800 hover:text-blue-600 transition-colors duration-300 font-medium relative group"
+                className=" hover:text-blue-600 transition-colors duration-300 font-medium relative group"
               >
                 Our Culture
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 href="/contact-us"
-                className="text-gray-800 hover:text-blue-600 transition-colors duration-300 font-medium relative group"
+                className=" hover:text-blue-600 transition-colors duration-300 font-medium relative group"
               >
                 Contact Us
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
@@ -75,7 +75,7 @@ const Navbar = () => {
 
               <button
                 onClick={toggleMobileMenu}
-                className="md:hidden text-gray-800 hover:text-blue-600 focus:outline-none transition-colors duration-300"
+                className="md:hidden  hover:text-blue-600 focus:outline-none transition-colors duration-300"
               >
                 {isMobileMenuOpen ? (
                   <X className="h-6 w-6" />
