@@ -6,36 +6,36 @@ import {
   IoPeople,
   IoGlobe,
   IoLaptopOutline,
-} from "react-icons/io5"; // ✅ valid Io5 icons
+} from "react-icons/io5"; 
 import Image from "next/image";
 
 const subjects = [
   {
     id: "01",
-    title: "Hindi & Sanskrit",
+    title: "हिंदी एवं संस्कृत",
     description:
-      "Focus on Hindi and Sanskrit literature, grammar, and writing skills to strengthen language foundation.",
+      "हिंदी और संस्कृत साहित्य, व्याकरण तथा लेखन कौशल पर ध्यान देकर भाषा की नींव मजबूत करना।",
     icon: <IoBook className="w-6 h-6 text-blue-500" />,
   },
   {
     id: "02",
-    title: "Mathematics & Science",
+    title: "गणित एवं विज्ञान",
     description:
-      "Develop problem-solving skills with strong fundamentals in mathematics and practical science learning.",
+      "गणित में मजबूत आधार और व्यावहारिक विज्ञान शिक्षा के साथ समस्या-समाधान कौशल विकसित करना।",
     icon: <IoLaptopOutline className="w-6 h-6 text-blue-500" />,
   },
   {
     id: "03",
-    title: "Social Studies",
+    title: "सामाजिक अध्ययन",
     description:
-      "Explore history, geography, and civics to understand society, culture, and values of our nation.",
+      "इतिहास, भूगोल और नागरिक शास्त्र का अध्ययन कर समाज, संस्कृति और राष्ट्र के मूल्यों को समझना।",
     icon: <IoGlobe className="w-6 h-6 text-blue-500" />,
   },
   {
     id: "04",
-    title: "Moral & Value Education",
+    title: "नैतिक एवं मूल्य शिक्षा",
     description:
-      "Learn discipline, respect, and values inspired by Indian traditions for holistic development.",
+      "भारतीय परंपराओं से प्रेरित अनुशासन, सम्मान और मूल्यों को सीखकर सर्वांगीण विकास करना।",
     icon: <IoPeople className="w-6 h-6 text-blue-500" />,
   },
 ];
@@ -46,7 +46,7 @@ export default function SubjectsSection() {
       {/* Sidebar Label */}
       <div className="absolute left-0 top-1/4 -translate-y-1/2 rotate-180 hidden sm:block">
         <div className="bg-blue-600 text-white px-3 py-1 rounded-lg rounded-br-lg text-xs sm:text-sm font-semibold tracking-wider rotate-90">
-          SUBJECTS
+          विषय
         </div>
       </div>
 
@@ -54,13 +54,12 @@ export default function SubjectsSection() {
         {/* Left Content */}
         <div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug mb-4 sm:mb-6">
-            Upgrade Your Skill, <br className="hidden sm:block" /> Upgrade Your
-            Life
+            अपने कौशल को बढ़ाएँ, <br className="hidden sm:block" /> अपना जीवन सुधारें
           </h2>
           <p className="text-gray-300 mb-8 sm:mb-10 text-sm sm:text-base">
-            The following are some of the subjects taught at our school under
-            the UP Board curriculum. Along with academics, we also emphasize
-            values, culture, and overall development of every child.
+            निम्नलिखित विषय यूपी बोर्ड पाठ्यक्रम के अंतर्गत हमारे विद्यालय में पढ़ाए जाते हैं। 
+            शैक्षणिक शिक्षा के साथ-साथ हम मूल्यों, संस्कृति और प्रत्येक बच्चे के 
+            सर्वांगीण विकास पर भी विशेष ध्यान देते हैं।
           </p>
 
           <div className="space-y-6 sm:space-y-8">
@@ -97,8 +96,8 @@ export default function SubjectsSection() {
               <span className="w-2.5 sm:w-3 h-2.5 sm:h-3 bg-green-500 rounded-full"></span>
             </div>
             <Image
-              src="/classroom.jpg" // 👉 replace with an image in your public folder
-              alt="Classroom learning"
+              src="/classroom.jpg" // 👉 अपने public फोल्डर में उपलब्ध इमेज लगाएँ
+              alt="कक्षा में सीखना"
               width={500}
               height={400}
               className="object-cover w-full h-auto"

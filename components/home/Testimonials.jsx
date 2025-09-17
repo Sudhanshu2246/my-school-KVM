@@ -4,64 +4,64 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     id: 1,
-    name: "Rahul Sharma",
-    role: "B.Sc. Graduate",
+    name: "राहुल शर्मा",
+    role: "बी.एससी. स्नातक",
     text: "हमारे स्कूल की शिक्षा ने मुझे जीवन में नई दिशा दी।",
     image: "/students/student1.jpg",
   },
   {
     id: 2,
-    name: "Anita Verma",
-    role: "Software Engineer",
+    name: "अनीता वर्मा",
+    role: "सॉफ़्टवेयर इंजीनियर",
     text: "शिक्षकों का मार्गदर्शन अद्भुत था।",
     image: "/students/student2.jpg",
   },
   {
     id: 3,
-    name: "Arjun Singh",
-    role: "UP Board Topper",
+    name: "अर्जुन सिंह",
+    role: "यूपी बोर्ड टॉपर",
     text: "यहाँ पढ़ाई ने मुझे आत्मविश्वासी बनाया।",
     image: "/students/student3.jpg",
   },
   {
     id: 4,
-    name: "Priya Mishra",
-    role: "MCA Student",
+    name: "प्रिया मिश्रा",
+    role: "एम.सी.ए. छात्रा",
     text: "पढ़ाई का आधुनिक तरीका बहुत अच्छा था।",
     image: "/students/student4.jpg",
   },
   {
     id: 5,
-    name: "Vikas Yadav",
-    role: "IT Professional",
+    name: "विकास यादव",
+    role: "आईटी प्रोफेशनल",
     text: "स्कूल की पढ़ाई ने मेरे करियर में मदद की।",
     image: "/students/student5.jpg",
   },
   {
     id: 6,
-    name: "Kiran Gupta",
-    role: "Teacher",
+    name: "किरण गुप्ता",
+    role: "शिक्षिका",
     text: "यह स्कूल विद्यार्थियों के भविष्य को आकार देता है।",
     image: "/students/student6.jpg",
   },
   {
     id: 7,
-    name: "Suman Tiwari",
-    role: "Bank Officer",
+    name: "सुमन तिवारी",
+    role: "बैंक अधिकारी",
     text: "यहाँ की शिक्षा ने मुझे प्रतियोगी परीक्षाओं के लिए तैयार किया।",
     image: "/students/student7.jpg",
   },
   {
     id: 8,
-    name: "Amit Kumar",
-    role: "Govt. Job",
+    name: "अमित कुमार",
+    role: "सरकारी नौकरी",
     text: "शिक्षकगण बहुत सहयोगी और प्रेरणादायक थे।",
     image: "/students/student8.jpg",
   },
   {
     id: 9,
-    name: "Neha Patel",
-    role: "Ph.D. Scholar",
+    name: "नेहा पटेल",
+    role: "पीएच.डी. शोधार्थी",
     text: "विद्यालय का वातावरण पढ़ाई के लिए उत्तम था।",
     image: "/students/student9.jpg",
   },
@@ -112,13 +112,13 @@ export default function TestimonialsCarousel() {
       {/* Side label */}
       {/* <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block">
         <div className="bg-blue-600 text-white px-3 py-1 rounded-lg rounded-br-lg text-xs sm:text-sm font-semibold tracking-wider rotate-90">
-          TESTIMONY
+          प्रशंसा
         </div>
       </div> */}
 
       <div className="px-4 sm:px-6 lg:px-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-10">
-          What Alumni Say <br className="hidden md:block" /> About Our School
+          हमारे पूर्व विद्यार्थियों की <br className="hidden md:block" /> राय
         </h2>
 
         {/* Row 1 */}

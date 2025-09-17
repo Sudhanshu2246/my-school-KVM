@@ -19,56 +19,56 @@ const Footer = () => {
     <footer className="bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Quick Links Section */}
+          {/* त्वरित लिंक अनुभाग */}
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-gray-200 bg-clip-text text-transparent">
-                Quick Links
+                त्वरित लिंक
               </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="/about-us"
-                    className="text-gray-300 hover:text-blue-200 transition-colors duration-300 flex items-center group"
+                    className="text-gray-300 hover:text-blue-500 transition-colors duration-300 flex items-center group"
                   >
                     <Info className="text-lg mr-3 text-blue-400 group-hover:text-blue-200 transition-colors duration-300" />
-                    About
+                    हमारे बारे में
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#teachers"
-                    className="text-gray-300 hover:text-blue-200 transition-colors duration-300 flex items-center group"
+                    className="text-gray-300 hover:text-blue-500 transition-colors duration-300 flex items-center group"
                   >
                     <Users className="text-lg mr-3 text-blue-400 group-hover:text-blue-200 transition-colors duration-300" />
-                    Teachers
+                    शिक्षक
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/#testimonials"
-                    className="text-gray-300 hover:text-blue-200 transition-colors duration-300 flex items-center group"
+                    className="text-gray-300 hover:text-blue-500 transition-colors duration-300 flex items-center group"
                   >
                     <Star className="text-lg mr-3 text-blue-400 group-hover:text-blue-200 transition-colors duration-300" />
-                    Testimonials
+                    प्रशंसापत्र
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/culture"
-                    className="text-gray-300 hover:text-blue-200 transition-colors duration-300 flex items-center group"
+                    className="text-gray-300 hover:text-blue-500 transition-colors duration-300 flex items-center group"
                   >
                     <Heart className="text-lg mr-3 text-blue-400 group-hover:text-blue-200 transition-colors duration-300" />
-                    Our Culture
+                    हमारी संस्कृति
                   </Link>
                 </li>
               </ul>
             </div>
 
-            {/* Social Media Links */}
+            {/* सोशल मीडिया लिंक */}
             <div>
-              <h4 className="text-lg font-semibold mb-4 text-blue-200">
-                Follow Us
+              <h4 className="text-lg font-semibold mb-4 text-blue-400">
+                हमें फ़ॉलो करें
               </h4>
               <div className="flex space-x-4">
                 <a
@@ -87,20 +87,20 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Details Section */}
+          {/* संपर्क विवरण */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-gray-200 bg-clip-text text-transparent">
-              Contact Details
+              संपर्क विवरण
             </h3>
 
             <div className="space-y-4">
-              {/* Phone */}
+              {/* फ़ोन */}
               <div className="flex items-start space-x-3 group">
                 <div className="p-2 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors duration-300">
                   <Phone className="text-blue-300 text-xl" />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">Phone</p>
+                  <p className="text-gray-400 text-sm mb-1">फ़ोन</p>
                   <a
                     href="tel:+919450976674"
                     className="text-white hover:text-blue-200 hover:underline transition-colors duration-300 font-medium mr-1"
@@ -116,13 +116,13 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Email */}
+              {/* ईमेल */}
               <div className="flex items-start space-x-3 group">
                 <div className="p-2 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors duration-300">
                   <Mail className="text-blue-300 text-xl" />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">Email</p>
+                  <p className="text-gray-400 text-sm mb-1">ईमेल</p>
                   <a
                     href="mailto:kvm@gmail.com"
                     className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
@@ -132,40 +132,40 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Address */}
+              {/* पता */}
               <div className="flex items-start space-x-3 group">
                 <div className="p-2 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors duration-300">
                   <MapPin className="text-blue-300 text-xl" />
                 </div>
                 <div>
-                  <p className="text-gray-400 text-sm mb-1">Address</p>
+                  <p className="text-gray-400 text-sm mb-1">पता</p>
                   <p className="text-white leading-relaxed">
-                    Village- Umari, near Shree Ram Janki Temple
+                    गाँव - उमरी, श्री राम जानकी मंदिर के पास
                     <br />
-                    Post-Paudhanrampur,
+                    पोस्ट - पौधनरामपुर,
                     <br />
-                    Sultanpur, Uttar Pradesh 228171, India
+                    सुलतानपुर, उत्तर प्रदेश 228171, भारत
                   </p>
                 </div>
               </div>
 
-              {/* Office Hours */}
+              {/* स्कूल समय */}
               <div className="mt-6 p-4 bg-white/5 rounded-lg border border-white/10">
-                <h4 className="text-blue-200 font-semibold mb-2">
-                  School Hours
+                <h4 className="text-blue-400 font-semibold mb-2">
+                  स्कूल समय
                 </h4>
                 <div className="space-y-1 text-sm text-gray-300">
-                  <p>Monday - Saturday: 9:00 AM - 4:00 PM</p>
-                  <p>Sunday: Closed</p>
+                  <p>सोमवार - शनिवार: सुबह 9:00 बजे - शाम 4:00 बजे</p>
+                  <p>रविवार: बंद</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Location Map Section */}
+          {/* लोकेशन मैप */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-gray-200 bg-clip-text text-transparent">
-              Our Location
+              हमारा स्थान
             </h3>
 
             <div className="relative">
@@ -192,13 +192,13 @@ const Footer = () => {
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-gray-500 hover:from-blue-600 hover:to-gray-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg group"
               >
                 <MapPin className="text-lg" />
-                Get Directions
+                दिशा-निर्देश प्राप्त करें
               </a>
             </div>
           </div>
         </div>
 
-        {/* Bottom Border */}
+        {/* नीचे की सीमा */}
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-4">
@@ -208,7 +208,7 @@ const Footer = () => {
               >
                 <Image
                   src="/logo.png"
-                  alt="Website Logo"
+                  alt="वेबसाइट लोगो"
                   width={50}
                   height={20}
                   priority
@@ -217,20 +217,20 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400">
-              <p>&copy; 2004 Kamla Bal Vidya Mandir. All rights reserved.</p>
+              <p>&copy; 2025 कमला बाल विद्या मंदिर। सभी अधिकार सुरक्षित।</p>
               <div className="flex space-x-4">
                 <Link
-                  href="/privacy"
+                  href="/privacy-policy"
                   className="hover:text-blue-200 transition-colors duration-300"
                 >
-                  Privacy Policy
+                  गोपनीयता नीति
                 </Link>
                 <span>|</span>
                 <Link
-                  href="/terms"
+                  href="/terms-and-conditions"
                   className="hover:text-blue-200 transition-colors duration-300"
                 >
-                  Terms of Service
+                  सेवा की शर्तें
                 </Link>
               </div>
             </div>

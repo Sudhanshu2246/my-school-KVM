@@ -13,34 +13,32 @@ const features = [
     icon: <IoSchool className="w-7 h-7 sm:w-8 sm:h-8 text-blue-600" />,
     title: (
       <>
-        Students will be <span className="text-blue-600">guided</span>{" "}
-        <br className="hidden sm:block" /> by the teacher to grow and develop
+        विद्यार्थियों को <span className="text-blue-600">मार्गदर्शन</span>{" "}
+        <br className="hidden sm:block" /> शिक्षक द्वारा दिया जाएगा ताकि वे बढ़ें और विकसित हों
       </>
     ),
     description:
-      "The students can become graduates who are competent in the field of IT.",
+      "विद्यार्थी ऐसे स्नातक बन सकते हैं जो आईटी क्षेत्र में दक्ष और सक्षम हों।",
   },
   {
     icon: <IoPeople className="w-7 h-7 sm:w-8 sm:h-8 text-blue-600" />,
     title: (
       <>
-        Students are <span className="text-blue-600">mentally</span> equipped to
-        have big dreams
+        विद्यार्थियों को <span className="text-blue-600">मानसिक रूप से</span> बड़े सपने देखने के लिए तैयार किया जाता है
       </>
     ),
     description:
-      "We encourage curiosity, creativity, and confidence so students can dream big and achieve their goals.",
+      "हम जिज्ञासा, रचनात्मकता और आत्मविश्वास को प्रोत्साहित करते हैं ताकि विद्यार्थी बड़े सपने देख सकें और अपने लक्ष्य हासिल कर सकें।",
   },
   {
     icon: <IoSparkles className="w-7 h-7 sm:w-8 sm:h-8 text-blue-600" />,
     title: (
       <>
-        <span className="text-blue-600">Beneficial</span> for many people, both
-        in the IT field or others
+        <span className="text-blue-600">लाभकारी</span> अनेक लोगों के लिए, चाहे आईटी क्षेत्र हो या अन्य
       </>
     ),
     description:
-      "Our programs build skills that are valuable across IT and other fields, shaping well-rounded individuals.",
+      "हमारे कार्यक्रम ऐसे कौशल विकसित करते हैं जो आईटी और अन्य क्षेत्रों दोनों में मूल्यवान हैं, जिससे सर्वांगीण व्यक्तित्व का निर्माण होता है।",
   },
 ];
 
@@ -50,7 +48,7 @@ export default function WhyUsCards() {
       {/* Sidebar */}
       <div className="absolute left-0 top-1/4 -translate-y-1/2 rotate-180 hidden lg:block">
         <div className="bg-blue-600 text-white px-3 py-1 rounded-lg rounded-br-lg text-xs sm:text-sm font-semibold tracking-wider rotate-90">
-          WHY US
+          क्यों चुनें हम?
         </div>
       </div>
 
@@ -59,20 +57,17 @@ export default function WhyUsCards() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 sm:mb-16">
           <div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-snug text-center md:text-left">
-              Choose a <span className="text-blue-600">Quality School</span>
-              <br className="hidden md:block" /> for a Bright Future
+              एक <span className="text-blue-600">गुणवत्तापूर्ण स्कूल</span> चुनें
+              <br className="hidden md:block" /> उज्ज्वल भविष्य के लिए
             </h1>
           </div>
           <div>
             <p className="mt-4 md:mt-0 text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed text-center md:text-left">
-              Our school is more than just a place of learning – it is a{" "}
+              हमारा विद्यालय केवल पढ़ाई का स्थान नहीं है – यह{" "}
               <span className="font-semibold text-gray-800">
-                community of growth and discovery.
+                विकास और खोज का समुदाय
               </span>{" "}
-              Through modern teaching techniques, technology integration, and
-              values-based education, we strive to create an environment where
-              students not only excel academically but also grow into
-              responsible global citizens.
+              है। आधुनिक शिक्षण पद्धतियों, तकनीकी एकीकरण और मूल्यों पर आधारित शिक्षा के माध्यम से हम ऐसा वातावरण बनाते हैं जहाँ विद्यार्थी न केवल शैक्षणिक रूप से उत्कृष्ट हों, बल्कि जिम्मेदार वैश्विक नागरिक भी बनें।
             </p>
           </div>
         </div>

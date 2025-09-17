@@ -5,75 +5,75 @@ import Image from "next/image";
 
 const teachers = [
   {
-    name: "Mr. Rajesh Kumar",
-    subject: "Mathematics",
-    qualification: "M.Sc. (Math), B.Ed.",
+    name: "श्री राजेश कुमार",
+    subject: "गणित",
+    qualification: "एम.एससी. (गणित), बी.एड.",
     image: "/teachers/rajesh.jpg",
   },
   {
-    name: "Mrs. Anjali Verma",
-    subject: "Science",
-    qualification: "M.Sc. (Physics), B.Ed.",
+    name: "श्रीमती अंजलि वर्मा",
+    subject: "विज्ञान",
+    qualification: "एम.एससी. (भौतिकी), बी.एड.",
     image: "/teachers/anjali.jpg",
   },
   {
-    name: "Mr. Arvind Singh",
-    subject: "English",
-    qualification: "M.A. (English), B.Ed.",
+    name: "श्री अरविंद सिंह",
+    subject: "अंग्रेज़ी",
+    qualification: "एम.ए. (अंग्रेज़ी), बी.एड.",
     image: "/teachers/arvind.jpg",
   },
   {
-    name: "Mrs. Pooja Sharma",
-    subject: "Hindi",
-    qualification: "M.A. (Hindi), B.Ed.",
+    name: "श्रीमती पूजा शर्मा",
+    subject: "हिंदी",
+    qualification: "एम.ए. (हिंदी), बी.एड.",
     image: "/teachers/pooja.jpg",
   },
   {
-    name: "Mr. Suresh Yadav",
-    subject: "Social Studies",
-    qualification: "M.A. (History), B.Ed.",
+    name: "श्री सुरेश यादव",
+    subject: "सामाजिक अध्ययन",
+    qualification: "एम.ए. (इतिहास), बी.एड.",
     image: "/teachers/suresh.jpg",
   },
   {
-    name: "Mrs. Neha Gupta",
-    subject: "Computer Science",
-    qualification: "B.Tech, M.C.A.",
+    name: "श्रीमती नेहा गुप्ता",
+    subject: "कंप्यूटर विज्ञान",
+    qualification: "बी.टेक, एम.सी.ए.",
     image: "/teachers/neha.jpg",
   },
   {
-    name: "Mr. Ramesh Patel",
-    subject: "Physics",
-    qualification: "M.Sc. (Physics), B.Ed.",
+    name: "श्री रमेश पटेल",
+    subject: "भौतिकी",
+    qualification: "एम.एससी. (भौतिकी), बी.एड.",
     image: "/teachers/ramesh.jpg",
   },
   {
-    name: "Mrs. Shalini Chauhan",
-    subject: "Chemistry",
-    qualification: "M.Sc. (Chemistry), B.Ed.",
+    name: "श्रीमती शालिनी चौहान",
+    subject: "रसायन विज्ञान",
+    qualification: "एम.एससी. (रसायन विज्ञान), बी.एड.",
     image: "/teachers/shalini.jpg",
   },
   {
-    name: "Mr. Amit Tripathi",
-    subject: "Biology",
-    qualification: "M.Sc. (Biology), B.Ed.",
+    name: "श्री अमित त्रिपाठी",
+    subject: "जीव विज्ञान",
+    qualification: "एम.एससी. (जीव विज्ञान), बी.एड.",
     image: "/teachers/amit.jpg",
   },
   {
-    name: "Mrs. Kavita Singh",
-    subject: "Economics",
-    qualification: "M.A. (Economics), B.Ed.",
+    name: "श्रीमती कविता सिंह",
+    subject: "अर्थशास्त्र",
+    qualification: "एम.ए. (अर्थशास्त्र), बी.एड.",
     image: "/teachers/kavita.jpg",
   },
   {
-    name: "Mr. Vinod Kumar",
-    subject: "Geography",
-    qualification: "M.A. (Geography), B.Ed.",
+    name: "श्री विनोद कुमार",
+    subject: "भूगोल",
+    qualification: "एम.ए. (भूगोल), बी.एड.",
     image: "/teachers/vinod.jpg",
   },
   {
-    name: "Mrs. Sunita Devi",
-    subject: "Arts",
-    qualification: "M.A. (Fine Arts), B.Ed.",
+    name: "श्रीमती सुनीता देवी",
+    subject: "कला",
+    qualification: "एम.ए. (ललित कला), बी.एड.",
     image: "/teachers/sunita.jpg",
   },
 ];
@@ -87,11 +87,12 @@ export default function MeetTeachers() {
     <section id="teachers" className="py-16 px-6 lg:px-12 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          Meet Our Teachers
+          हमारे शिक्षकों से मिलिए
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          Our dedicated and qualified teachers are the backbone of our school. 
-          They not only teach but also mentor, guide, and inspire students to achieve excellence.
+          हमारे समर्पित और योग्य शिक्षक हमारे विद्यालय की रीढ़ हैं। 
+          वे केवल पढ़ाते ही नहीं, बल्कि विद्यार्थियों का मार्गदर्शन,
+          परामर्श और प्रेरणा भी देते हैं ताकि वे उत्कृष्टता प्राप्त कर सकें।
         </p>
       </div>
 
@@ -125,14 +126,14 @@ export default function MeetTeachers() {
             onClick={() => setShowAll(true)}
             className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-medium hover:scale-105 transition transform"
           >
-            See More
+            और देखें
           </button>
         ) : (
           <button
             onClick={() => setShowAll(false)}
             className="px-6 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-gray-900 transition"
           >
-            Show Less
+            कम दिखाएँ
           </button>
         )}
       </div>

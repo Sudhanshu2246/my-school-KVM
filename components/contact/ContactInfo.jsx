@@ -4,11 +4,11 @@ export default function ContactInfo() {
   return (
     <div className="space-y-8">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Get in <span className="text-blue-600">Touch</span>
+        संपर्क <span className="text-blue-600">करें</span>
       </h2>
       <p className="text-gray-700 leading-relaxed">
-        Have questions about admissions, school programs, or upcoming events? 
-        Fill out the form or reach out to us through the following details.
+        क्या आपके पास प्रवेश, विद्यालय कार्यक्रमों या आगामी आयोजनों से संबंधित प्रश्न हैं? 
+        नीचे दिए गए विवरणों के माध्यम से हमसे संपर्क करें या फ़ॉर्म भरें।
       </p>
 
       <div className="space-y-6">

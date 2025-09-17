@@ -4,33 +4,33 @@ export default function SchoolJourney() {
   const journey = [
     {
       year: "2004",
-      title: "Foundation Year",
+      title: "स्थापना वर्ष",
       description:
-        "Our school was started by Late Mr. Sampati Ram Ji with just three shaded classrooms, built by himself after retirement.",
+        "हमारे विद्यालय की स्थापना स्व. श्री संपति राम जी द्वारा मात्र तीन छायादार कक्षाओं से की गई, जिन्हें उन्होंने सेवानिवृत्ति के बाद स्वयं बनाया था।",
     },
     {
       year: "2008",
-      title: "Growth Phase",
+      title: "विकास चरण",
       description:
-        "Despite many challenges and resistance, the school kept growing with the support of his son, family, and dedicated community members.",
+        "कई चुनौतियों और विरोध के बावजूद, विद्यालय उनके पुत्र, परिवार और समर्पित समुदाय के सहयोग से निरंतर आगे बढ़ता रहा।",
     },
     {
       year: "2015",
-      title: "Expansion",
+      title: "विस्तार",
       description:
-        "Added more classrooms and modern facilities to provide better learning opportunities for students.",
+        "छात्रों को बेहतर सीखने के अवसर देने के लिए और अधिक कक्षाएँ और आधुनिक सुविधाएँ जोड़ी गईं।",
     },
     {
       year: "2020",
-      title: "Recognition",
+      title: "मान्यता",
       description:
-        "The school was recognized locally for providing affordable education to all categories of society.",
+        "विद्यालय को समाज के सभी वर्गों को किफायती शिक्षा प्रदान करने के लिए स्थानीय स्तर पर मान्यता मिली।",
     },
     {
       year: "2023",
-      title: "Future Vision",
+      title: "भविष्य की दृष्टि",
       description:
-        "Carrying forward his vision, the school adopted digital learning methods to make education future-ready.",
+        "उनकी सोच को आगे बढ़ाते हुए विद्यालय ने डिजिटल शिक्षण पद्धतियाँ अपनाईं ताकि शिक्षा को भविष्य के लिए तैयार किया जा सके।",
     },
   ];
 
@@ -39,7 +39,7 @@ export default function SchoolJourney() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-          Our <span className="text-blue-600">Journey</span>
+          हमारी <span className="text-blue-600">यात्रा</span>
         </h2>
 
         {/* Timeline */}

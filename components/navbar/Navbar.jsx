@@ -22,12 +22,11 @@ const Navbar = () => {
               <Link href="/" className="flex items-center">
                 <Image
                   src="/logo.png"
-                  alt="Website Logo"
+                  alt="विद्यालय लोगो"
                   width={50}
                   height={20}
                   priority
                 />
-                {/* <span className="ml-2 text-xl font-bold text-gray-900">School</span> */}
               </Link>
             </div>
 
@@ -37,28 +36,21 @@ const Navbar = () => {
                 href="/"
                 className=" hover:text-blue-600 transition-colors duration-300 font-medium relative group"
               >
-                Home
+                गृहपृष्ठ
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 href="/about-us"
                 className=" hover:text-blue-600 transition-colors duration-300 font-medium relative group"
               >
-                About Us
+                हमारे बारे में
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 href="/culture"
                 className=" hover:text-blue-600 transition-colors duration-300 font-medium relative group"
               >
-                Our Culture
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link
-                href="/contact-us"
-                className=" hover:text-blue-600 transition-colors duration-300 font-medium relative group"
-              >
-                Contact Us
+                हमारी संस्कृति
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </div>
@@ -69,7 +61,7 @@ const Navbar = () => {
                 href="/contact-us"
                 className="hidden sm:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg group"
               >
-                Get In Touch
+                हमसे संपर्क करें
                 <LogIn className="text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110" />
               </Link>
 
@@ -99,35 +91,28 @@ const Navbar = () => {
               className="block text-gray-800 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Home
+              गृहपृष्ठ
             </Link>
             <Link
               href="/about-us"
               className="block text-gray-800 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About Us
+              हमारे बारे में
             </Link>
             <Link
               href="/culture"
               className="block text-gray-800 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Our Culture
-            </Link>
-            <Link
-              href="/contact-us"
-              className="block text-gray-800 hover:text-blue-600 transition-colors duration-300 font-medium py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Contact Us
+              हमारी संस्कृति
             </Link>
             <Link
               href="/contact-us"
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 w-fit group mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Get In Touch
+              हमसे संपर्क करें
               <LogIn className="text-lg transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>

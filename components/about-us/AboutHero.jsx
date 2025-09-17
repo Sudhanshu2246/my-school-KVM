@@ -13,7 +13,7 @@ export default function HeroSection() {
           transition={{ duration: 1 }}
           className="text-4xl md:text-6xl font-extrabold leading-tight"
         >
-          The Legacy of Our School
+          हमारे विद्यालय की विरासत
         </motion.h1>
 
         {/* Subheading / Journey */}
@@ -23,17 +23,18 @@ export default function HeroSection() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 leading-relaxed"
         >
-          Our journey began in{" "}
-          <span className="text-yellow-400 font-semibold">2004</span>, when{" "}
+          हमारी यात्रा की शुरुआत{" "}
+          <span className="text-yellow-400 font-semibold">2004</span> में हुई,
+          जब{" "}
           <span className="text-pink-400 font-semibold">
-            Late Mr. Sampati Ram Ji
-          </span>
-          , after retiring from his government teaching post, laid the
-          foundation of this school. With his own hands, he built the first{" "}
-          <span className="text-yellow-400 font-semibold">
-            three-shed classrooms
+            स्वर्गीय श्री संपति राम जी
           </span>{" "}
-          to provide affordable education to every child in the community.
+          ने सरकारी शिक्षक पद से सेवानिवृत्ति के बाद इस विद्यालय की नींव रखी।
+          अपने हाथों से उन्होंने{" "}
+          <span className="text-yellow-400 font-semibold">
+            तीन झोपड़ी जैसी कक्षाओं
+          </span>{" "}
+          का निर्माण किया ताकि समाज के हर बच्चे को सस्ती शिक्षा मिल सके।
         </motion.p>
 
         {/* Struggles */}
@@ -43,15 +44,15 @@ export default function HeroSection() {
           transition={{ delay: 1, duration: 1 }}
           className="text-lg md:text-xl max-w-4xl mx-auto text-gray-200 leading-relaxed"
         >
-          Though he faced countless{" "}
-          <span className="text-yellow-400 font-semibold">resistances{" "}</span>
-           and hardships on this path, his vision and determination never
-          stopped. His sacrifices became the foundation of an institution that
-          today continues to nurture young minds with{" "}
+          इस मार्ग में उन्होंने अनगिनत{" "}
+          <span className="text-yellow-400 font-semibold">विरोधों</span> और
+          कठिनाइयों का सामना किया, फिर भी उनका दृष्टिकोण और संकल्प कभी नहीं
+          रुका। उनके त्याग उस संस्था की नींव बने जो आज भी नन्हें-मुन्नों के
+          मन को{" "}
           <span className="text-blue-400 font-semibold">
-            values, knowledge, and hope
-          </span>
-          .
+            मूल्यों, ज्ञान और आशा
+          </span>{" "}
+          से सिंचित कर रही है।
         </motion.p>
 
         {/* Family & Friend Contribution */}
@@ -61,18 +62,17 @@ export default function HeroSection() {
           transition={{ delay: 1.5, duration: 1 }}
           className="text-lg md:text-xl max-w-4xl mx-auto text-gray-200 leading-relaxed"
         >
-          In this journey, his son{" "}
+          इस यात्रा में उनके सुपुत्र{" "}
           <span className="text-pink-400 font-semibold">
-            Mr. Subhash Chandra
-          </span>
-          , along with his family, stood as a strong pillar of support, carrying
-          forward his father’s mission with dedication. Equally important was
-          his dear friend{" "}
+            श्री सुभाष चन्द्र
+          </span>{" "}
+          ने  मजबूत स्तंभ की तरह खड़े रहकर अपने पिता के
+          मिशन को आगे बढ़ाया। उतना ही महत्वपूर्ण योगदान उनके  मित्र{" "}
           <span className="text-pink-400 font-semibold">
-            Late Mr. Narendra Bahadur Singh
-          </span>
-          , whose encouragement, guidance, and selfless contribution became a
-          driving force in turning this vision into reality.
+            स्वर्गीय श्री नरेंद्र बहादुर सिंह
+          </span>{" "}
+          का भी रहा, जिनका उत्साहवर्धन, मार्गदर्शन और निःस्वार्थ योगदान इस
+          स्वप्न को साकार करने में प्रेरक शक्ति बना।
         </motion.p>
 
         {/* Closing Line */}
@@ -82,8 +82,8 @@ export default function HeroSection() {
           transition={{ delay: 2, duration: 1 }}
           className="text-lg md:text-xl max-w-3xl mx-auto text-gray-300 italic"
         >
-          Together, they transformed a humble beginning into a legacy that
-          continues to inspire and educate generations.
+          मिलकर उन्होंने एक साधारण शुरुआत को ऐसी विरासत में बदल दिया, जो
+          आज भी पीढ़ियों को प्रेरित और शिक्षित कर रही है।
         </motion.p>
       </div>
     </section>

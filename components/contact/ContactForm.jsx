@@ -22,7 +22,7 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setStatus("Sending...");
+    setStatus("भेजा जा रहा है...");
 
     try {
       const result = await emailjs.send(
@@ -40,11 +40,11 @@ export default function ContactForm() {
       );
 
       console.log("EmailJS result:", result.text);
-      setStatus("✅ Message sent successfully!");
+      setStatus("✅ संदेश सफलतापूर्वक भेजा गया!");
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     } catch (error) {
       console.error("❌ EmailJS error:", error);
-      setStatus("❌ Failed to send message. Please try again.");
+      setStatus("❌ संदेश भेजने में असफल। कृपया पुनः प्रयास करें।");
     } finally {
       setLoading(false);
     }
@@ -59,7 +59,7 @@ export default function ContactForm() {
         <input
           type="text"
           name="name"
-          placeholder="Full Name"
+          placeholder="पूरा नाम"
           value={formData.name}
           onChange={handleChange}
           required
@@ -68,7 +68,7 @@ export default function ContactForm() {
         <input
           type="email"
           name="email"
-          placeholder="Email Address"
+          placeholder="ईमेल पता"
           value={formData.email}
           onChange={handleChange}
           required
@@ -80,7 +80,7 @@ export default function ContactForm() {
         <input
           type="tel"
           name="phone"
-          placeholder="Phone Number"
+          placeholder="फ़ोन नंबर"
           value={formData.phone}
           onChange={handleChange}
           required
@@ -94,18 +94,18 @@ export default function ContactForm() {
           required
           className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
-          <option value="">Select Reason</option>
-          <option value="Admission Inquiry">Admission Inquiry</option>
-          <option value="Fee Structure">Fee Structure</option>
-          <option value="Teacher Meeting">Teacher Meeting</option>
-          <option value="School Programs">School Programs</option>
-          <option value="Other">Other</option>
+          <option value="">कारण चुनें</option>
+          <option value="Admission Inquiry">प्रवेश संबंधी जानकारी</option>
+          <option value="Fee Structure">शुल्क संरचना</option>
+          <option value="Teacher Meeting">शिक्षक से मुलाकात</option>
+          <option value="School Programs">स्कूल कार्यक्रम</option>
+          <option value="Other">अन्य</option>
         </select>
       </div>
 
       <textarea
         name="message"
-        placeholder="Your Message"
+        placeholder="अपना संदेश लिखें"
         value={formData.message}
         onChange={handleChange}
         required
@@ -136,7 +136,7 @@ export default function ContactForm() {
             : "bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:scale-105"
         }`}
       >
-        {loading ? "Sending..." : "Send Message"}
+        {loading ? "भेजा जा रहा है..." : "संदेश भेजें"}
       </button>
     </form>
   );
